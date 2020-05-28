@@ -16,7 +16,7 @@ class Usuario {
         const promesa = new Promise((resolve, reject)=>{                       
 
                 if (secretEmail == getCorreo  && secretPassword == getPass) { // Aqui validan los parametros obtenidos 
-                        resolve("Procesamiento bien");                  
+                        resolve("Procesamiento correcto");                  
                     
                         this.getTodos();
             
@@ -33,7 +33,7 @@ class Usuario {
                     getTodos();
                 
             }).catch((error)=>{
-                alert("Usuario no valido");               
+                alert("Usuario no valido, compruebe sus credenciales e intente de nuevo");               
             });
 
         }        
