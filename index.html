@@ -10,21 +10,29 @@
 </head>
 <body>
     <!--<h1>Este es la tarea 1 de la clase de Vue.</h1> -->
-    <form class="text-center"> 
-        <h2>Login</h2>
-        <!-- <label for="correo">Correo</label> -->
-        <input type="email" id="correo" placeholder="Correo">
-        <br>
-        <!-- <label for="pass">Contraseña</label> -->
-        <input type="password" id="pass" placeholder="Contraseña">
-        
-        <div>
-            <label>
-                <input type="checkbox" value="remember-me">Recordar Usuario
-            </label>            
-        </div>
-        <button type="button" onClick="datosUser.obtener()">Ingresar</button>
-    </form>
+    <nav>
+        <a href="./pages/acerca_de.html">Acerca de</a>
+    </nav>
+    
+    <section>   
+        <form class="text-center"> 
+            <h2>Login</h2>
+            <!-- <label for="correo">Correo</label> -->
+            <input type="email" id="correo" placeholder="Correo">
+            <br>
+            <!-- <label for="pass">Contraseña</label> -->
+            <input type="password" id="pass" placeholder="Contraseña">
+            <br><br>
+            <button type="button" onClick="datosUser.obtener()">Ingresar</button>
+            <br><br>
+            <div>
+                <label>
+                    <input type="checkbox" value="remember-me">Recordar Usuario
+                </label>            
+            </div>
+            
+        </form>
+    </section>
 
     <script src="js/login.js">
         

@@ -4,7 +4,7 @@
 body {
     background-color: #ebe7e7;
     font-family: "Nunito", sans-serif;
-    font-size: 20pt;
+    font-size: 12pt;
   }
   
   #main-section {
@@ -37,7 +37,7 @@ body {
   
   @media only screen and (min-width: 600px) {
     body {
-      font-size: 15pt;
+      font-size: 13pt;
     }
   }
   

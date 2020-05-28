@@ -33,7 +33,9 @@ class Usuario {
                     getTodos();
                 
             }).catch((error)=>{
-                alert("Usuario no valido, compruebe sus credenciales e intente de nuevo");               
+                alert("Usuario no valido, compruebe sus credenciales e intente de nuevo");             
+                document.getElementById("correo").value = "";  
+                document.getElementById("pass").value = "";  
             });
 
         }        
