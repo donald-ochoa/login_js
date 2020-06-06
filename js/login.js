@@ -11,7 +11,7 @@ class Usuario {
     p = function (getCorreo, getPass) {
 
         let secretEmail = "correo@example.com";
-        let secretPassword = 1234;
+        let secretPassword = 1;
 
         const promesa = new Promise((resolve, reject)=>{                       
 
@@ -28,6 +28,7 @@ class Usuario {
 
             promesa.then((mensaje) => {
                     alert("Bienvenido nuevamente: " + secretEmail);
+                    location.replace("../pages/logged.html");
                 
                     // llamar funcion asincrona
                     getTodos();
@@ -37,7 +38,6 @@ class Usuario {
                 document.getElementById("correo").value = "";  
                 document.getElementById("pass").value = "";  
             });
-
         }        
     }
 
